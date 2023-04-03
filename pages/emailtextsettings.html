@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/"
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-../assets-path="../assets/"
     data-template="vertical-menu-template-free">
 
 <head>
@@ -20,7 +20,7 @@
         rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
     <link rel="stylesheet" href="../assets/vendor/css/core.css" />
@@ -207,7 +207,7 @@
                                 <a class="hide-arrow nav-link dropdown-toggle d-flex align-items-center"
                                     href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                                        <img src="../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
@@ -216,7 +216,7 @@
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="assets/img/avatars/1.png" alt
+                                                        <img src="../assets/img/avatars/1.png" alt
                                                             class="w-px-40 h-auto rounded-circle" />
                                                     </div>
                                                 </div>
@@ -296,69 +296,73 @@
                                     <h4 class="card-header">Change Text Settings</h4>
                                     <div class="card-body">
                                         <div class="dropdown-divider mb-3"></div>
+                                       
                                         <div class="row">
-                                            <div class="col-12 ">
-                                               <div>
-                                                 <h5 class="border-start">Questions</h5>
-                                               </div>
-                                            
-                                                                                                       
-                                                        <div class="col-3">
-                                                            <div class=" " wire:ignore="">
-                                                              <div class="nav-align-left">
-                                                                <ul class="nav nav-tabs w-100" role="tablist">
-                                                                  <li class="nav-item">
-                                                                    <a href="" type="button" class="nav-link"><i class="bx bx-plus"></i>&nbsp;Add
-                                                                      Product
-                                                                    </a>
-                                                                  </li>
-                                                                  <li class="nav-item">
-                                                                    <a href="" type="button" class="nav-link active"><i
-                                                                        class="bx bx-package"></i>&nbsp;General
-                                                                    </a>
-                                                                  </li>
-                                                                  <li class="nav-item">
-                                                                    <a href="" type="button" class="nav-link " aria-controls="product-locales">
-                                                                      <i class="bx bx-food-menu"></i>&nbsp;Locales
-                                                                    </a>
-                                                                  </li>
-                                                                  <li class="nav-item">
-                                                                    <a href="" type="button" class="nav-link "><i class="bx bx-image"></i>&nbsp;
-                                                                      Images</a>
-                                                                  </li>
-                                                                </ul>
-                                                              </div>
-                                                            </div>
-                                                      </div>
-                                                  
-                                                    
-                                           
-
-                                            <div class="col-9">
-                                                 <box-icon type='solid' name=''></box-icon>
-                                                <div class="d-flex justify-content-between">
-                                                    <h5 >Questions message text (Dutch)</h5>
-                                                    <i class="bx bxs-comment-add bx-sm align-middle"></i>
-                                                </div>
-
-                                                <div class="form-floating mb-3">
-                                                    <textarea class="form-control" placeholder="Leave a comment here"
-                                                        id="floatingTextarea2" style="height: 100px">
-</textarea>
-                                                    <label for="floatingTextarea2">Comments</label>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <button type="button" class="btn btn-primary">Save Text</button>
-                                                    <button type="button" class="btn btn-primary">Save Text</button>
-                                                    <button type="button" class="btn btn-primary">Save Text</button>
-                                                    <button type="button" class="btn btn-primary">Save Text</button>
-                                                    <button type="button" class="btn btn-primary">Save Text</button>
-                                                    <button type="button" class="btn btn-primary">Save Text</button>
-                                                    <button type="button" class="btn btn-primary">Save Text</button>
-                                                </div>
-                                                <button type="button" class="btn btn-primary">Save Text</button>
-                                                <button type="button" class="btn btn-light">Example</button>
+                                            <div class="col-3">
+                                                <h5 class="border-start">Questions</h5>
                                             </div>
+                                            
+                                            <div class="col-9 d-flex justify-content-between">
+                                                <div class="col-5">
+                                                    <h5 >Questions message text (Dutch)</h5>
+                                                  </div>
+                                             <div>
+                                                <a href="" class="nav-link"><i class="bx bx-plus"></i></a>
+                                             </div>
+                                            </div>
+                                          </div>
+                                        <div class="row">                                         
+                                                                  
+                                            <div class="col-12 d-flex justify-content-between">
+                                                <div class="col-2">                                                 
+                                                        <div class=" " wire:ignore="">
+                                                          <div class="nav-align-left">
+                                                            <ul class="nav nav-tabs w-100" role="tablist">
+                                                              <li class="nav-item">
+                                                                <a href="" type="button" class="nav-link"><i class="bx bx-plus"></i>&nbsp;Add
+                                                                  Product
+                                                                </a>
+                                                              </li>
+                                                              <li class="nav-item">
+                                                                <a href="" type="button" class="nav-link active"><i
+                                                                    class="bx bx-package"></i>&nbsp;General
+                                                                </a>
+                                                              </li>
+                                                              <li class="nav-item">
+                                                                <a href="" type="button" class="nav-link " aria-controls="product-locales">
+                                                                  <i class="bx bx-food-menu"></i>&nbsp;Locales
+                                                                </a>
+                                                              </li>
+                                                              <li class="nav-item">
+                                                                <a href="" type="button" class="nav-link "><i class="bx bx-image"></i>&nbsp;
+                                                                  Images</a>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>                                                  
+                                                   
+                                                </div>
+                                                <div class="col-9">                                                  
+
+                                                        <box-icon type='solid' name=''></box-icon>
+                                                       
+       
+                                                       <div class="form-floating mb-3">
+                                                           <textarea class="form-control" placeholder="Leave a comment here"
+                                                               id="floatingTextarea2" style="height: 100px">
+                                                         </textarea>
+                                                           <label for="floatingTextarea2">Comments</label>
+                                                       </div>
+                                                       <p>Available Tags</p>
+                                                       <div class="mb-3">
+                                                        <span class="badge bg-primary">Company</span>
+                                                        <span class="badge bg-secondary">Phone</span>                                                           
+                                                       </div>
+                                                       <button type="button" class="btn btn-primary">Save Text</button>
+                                                       <button type="button" class="btn btn-secondary">Example</button>
+                                                   </div>
+                                              </div>                                                                                 
+
                                         </div>
                                     </div>
                                 </div>

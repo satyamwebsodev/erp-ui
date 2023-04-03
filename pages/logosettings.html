@@ -4,7 +4,7 @@
   class="light-style layout-menu-fixed"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="assets/"
+  data-../assets-path="../assets/"
   data-template="vertical-menu-template-free"
 >
   <head>
@@ -25,14 +25,19 @@
     />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
     <link rel="stylesheet" href="../assets/vendor/css/core.css" />
     <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" />
-    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
-  
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/apex-charts/apex-charts.css"
+    />
     <!-- Image_Cropper -->
     <link
       rel="stylesheet"
@@ -270,7 +275,7 @@
                   >
                     <div class="avatar avatar-online">
                       <img
-                        src="assets/img/avatars/1.png"
+                        src="../assets/img/avatars/1.png"
                         alt
                         class="h-auto rounded-circle"
                       />
@@ -283,7 +288,7 @@
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
                               <img
-                                src="assets/img/avatars/1.png"
+                                src="../assets/img/avatars/1.png"
                                 alt
                                 class="w-px-40 h-auto rounded-circle"
                               />
@@ -391,7 +396,7 @@
                               onchange="readURL(this);"
                             />
                             <div class=" col-12 image_container mb-3">
-                              <img id="blah" class="img-fluid mb-3" src="/pages/assets/img/avatars/2.png" alt="your image" />
+                              <img id="blah" class="img-fluid mb-3" src="/erpui/../assets/img/avatars/2.png" alt="your image" />
                             </div>   
                              <button type="button" class="btn btn-primary" id="crop_button">Crop</button>                        
                             <div class="col-6 mb-3" id="cropped_result"></div>                          
@@ -404,7 +409,7 @@
                           <h5 class=" ">Example</h5>
                           <div class="mb-4 d-flex justify-content-center">
                             <img
-                              src="/pages/assets/img/avatars/2.png"
+                              src="/erpui/../assets/img/avatars/2.png"
                               class="img-fluid"
                               width="150px"
                               height="100px"

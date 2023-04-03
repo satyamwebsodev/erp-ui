@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/"
-    data-template="vertical-menu-template-free">
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr">
 
 <head>
     <meta charset="utf-8" />
@@ -20,18 +19,17 @@
         rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
     <link rel="stylesheet" href="../assets/vendor/css/core.css" />
-  <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" />
-  <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-  <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
-  <script src="../assets/vendor/js/helpers.js"></script>
- 
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <script src="../assets/vendor/js/helpers.js"></script>
 
-    <!-- Remove in production -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/libs/select2/css/select2.css"/>
 </head>
 
 <body>
@@ -105,7 +103,7 @@
                                     <div>Currency Settings</div>
                                 </a>
                             </li>
-                           
+
                             <li class="menu-item">
                                 <a href="emailtextsettings.html" class="menu-link">
                                     <div>Email Text Settings</div>
@@ -126,7 +124,7 @@
                                     <div>Trade names</div>
                                 </a>
                             </li>
-                           
+
                         </ul>
                     </li>
                 </ul>
@@ -211,7 +209,7 @@
                                 <a class="hide-arrow nav-link dropdown-toggle d-flex align-items-center"
                                     href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                                        <img src="../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
@@ -220,7 +218,7 @@
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
-                                                        <img src="assets/img/avatars/1.png" alt
+                                                        <img src="../assets/img/avatars/1.png" alt
                                                             class="w-px-40 h-auto rounded-circle" />
                                                     </div>
                                                 </div>
@@ -298,24 +296,24 @@
                             <!-- Company Settings Form Container -->
                             <div class="col-6">
                                 <div class="card">
-                                    <h4  class="card-header">Change company settings</h4>
+                                    <h4 class="card-header">Change company settings</h4>
                                     <div class="card-body">
                                         <form action="">
                                             <div class="mb-3">
-                                                <label for="company-name">Company Name *</label>
-                                                <input name="Company_"name type="text" id="company_name" class="form-control mb-3"
-                                                    placeholder="SuckanFood BV">
+                                                <label for="company_name">Company Name *</label>
+                                                <input autofocus name="company_name" type="text" id="company_name"
+                                                    class="form-control mb-3" placeholder="SukanFood BV">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="Billing-information">Billing information *</label>
-                                                <input name="billing_information" type="text" id="billing_information" class="form-control mb-3"
-                                                    placeholder="Patna Bihar India">
+                                                <label for="billing_information">Billing information <br>Address*</label>
+                                                <input name="billing_information" type="text" id="billing_information"
+                                                    class="form-control mb-3" placeholder="Patna Bihar India">
                                             </div>
-                                            <div class="row flex-grow-1 mb-3" >
+                                            <div class="row flex-grow-1 mb-3">
                                                 <div class="col-4">
-                                                    <label for="Poatal-code">Postal Code *</label>
-                                                    <input name="postal_code"  type="text" id="Poatal_code" class="form-control "
-                                                        placeholder="800024">
+                                                    <label for="Poatal_code">Postal Code *</label>
+                                                    <input name="postal_code" type="text" id="Poatal_code"
+                                                        class="form-control " placeholder="800024">
                                                 </div>
                                                 <div class="col-8">
                                                     <label for="Place">Place *</label>
@@ -324,88 +322,151 @@
                                                 </div>
                                             </div>
                                             <div class="mb-3">
-                                                <label for="Place">Category *</label>
-                                                <select name="category" id="category" class="form-select" aria-label="Select Category">
-                                                    <option selected>Select Category</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
+                                                <label for="country">Country *</label>
+                                                <select name="country" id="country" class="form-select"
+                                                    aria-label="select country">
+                                                    <option selected>===Select Country</option>
+                                                    <option value="1">Neither Lands</option>
+                                                    <option value="2">USA</option>
+                                                    <option value="3">India</option>
                                                 </select>
                                             </div>
+                                            <hr>
                                             <div class="mb-3" id="Shipping_information">
                                                 <h5>Shipping Information</h5>
-                                                <label for="Place">Address*</label>
-                                                <input name="address" type="text" id="Shipping_address" class="form-control ">
-                                                <div class="row flex-grow-1 mb-3" >
+                                                <div class="mb-3">
+                                                    <label for="shipping_address">Address*</label>
+                                                    <input name="shipping_address" type="text" id="shipping_address"
+                                                        class="form-control ">
+                                                </div>
+                                                <div class="row flex-grow-1 mb-3">
                                                     <div class="col-4">
-                                                        <label for="Poatal-code">Postal Code *</label>
-                                                        <input name="postal_code" type="text" id="poatal_code" class="form-control"
-                                                            placeholder="800024">
+                                                        <label for="poatal_code">Postal Code *</label>
+                                                        <input name="postal_code" type="text" id="poatal_code"
+                                                            class="form-control" placeholder="800024">
                                                     </div>
                                                     <div class="col-8">
-                                                        <label for="Place">Place *</label>
+                                                        <label for="place">Place *</label>
                                                         <input name="place" type="text" id="place" class="form-control "
                                                             placeholder="Patna Bihar India">
                                                     </div>
                                                 </div>
-                                               <div class="mb-3">
-                                                <label for="country">Country*</label>
-                                                <select  id="country" name="country" class="form-select " >
-                                                    <option value="">=== Select Country</option>
-                                                    <option value="">America</option>
-                                                    <option value="">India</option>
-                                                </select>
-                                               </div>
+                                                <div class="mb-3">
+                                                    <label for="shipping_country">Country*</label>
+                                                    <select id="shipping_country" name="shipping_country"
+                                                        class="form-select ">
+                                                        <option value="">=== Select Country</option>
+                                                        <option value="">America</option>
+                                                        <option value="">India</option>
+                                                    </select>
+                                                </div>
+                                                <hr>
                                                 <div class="mb-3">
                                                     <h5>General Data</h5>
-                                                    <label for="">Phone(general)*</label>
-                                                    <input name="phone_general" type="text" class="form-control mb-3" id="phone_general">
-                                                    <label for="">Fax machine</label>
-                                                    <input name="fax_machine" type="text" class="form-control mb-3" id="fax_machine">
-                                                    <label  for="">Email(general)*</label>
-                                                    <input name="email_general" type="text" class="form-control mb-3" id="email_general">
-                                                    <label  for="">Website*</label>
-                                                    <input name="website" type="text" class="form-control mb-3">
-                                                    <label for="">Chamber of commerce number*</label>
-                                                    <input name="chamber_of_commerce_number" type="text" class="form-control mb-3" id="chamber_of_commerce_number">
-                                                    <label for="">VAT number*</label>
-                                                    <input name="vat_number" type="text" class="form-control mb-3">
-                                                    <label for="">EORI number*</label>
-                                                    <input name="eori_number" type="text" class="form-control mb-3" id="eori_number">
-                                                    <label for="">GLN number</label>
-                                                    <input name="GLN_number" type="text" id="GLN_number" class="form-control mb-3">
+                                                    <div class="mb-3">
+                                                        <label for="phone_general">Phone(general)*</label>
+                                                        <input name="phone_general" type="text" class="form-control "
+                                                            id="phone_general">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="fax_machine">Fax machine</label>
+                                                        <input name="fax_machine" type="text" class="form-control "
+                                                            id="fax_machine">
+
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="email_general">Email(general)*</label>
+                                                        <input name="email_general" type="text" class="form-control "
+                                                            id="email_general">
+                                                    </div>
+                                                    <div class="mb-3"> <label for="website">Website*</label>
+                                                        <input name="website" id="website" type="text" class="form-control ">
+                                                    </div>
+                                                    <div class="mb-3"> <label for="chamber_of_commerce_number">Chamber
+                                                            of commerce number*</label>
+                                                        <input name="chamber_of_commerce_number" type="text"
+                                                            class="form-control " id="chamber_of_commerce_number">
+                                                    </div>
+                                                    <div class="mb-3"><label for="vat_number">VAT number*</label>
+                                                        <input name="vat_number" id="vat_number" type="text"
+                                                            class="form-control ">
+                                                    </div>
+                                                    <div class="mb-3"> <label for="eori_number">EORI number*</label>
+                                                        <input name="eori_number" type="text" class="form-control "
+                                                            id="eori_number">
+                                                    </div>
+                                                    <div class="mb-3"> <label for="gln_number">GLN number</label>
+                                                        <input name="gln_number" type="text" id="gln_number"
+                                                            class="form-control ">
+                                                    </div>
                                                 </div>
+                                                <hr>
                                                 <div class="mb-3">
                                                     <h5>Bank Details</h5>
-                                                    <label for="">Bank*</label>
-                                                    <input name="bank" type="text" id="bank" class="form-control mb-3" placeholder="Rabobank">
-                                                    <label for="">Bank Account (IBAN)</label>
-                                                    <input name="bank_account" type="text" id="bank_account" class="form-control mb-3" placeholder="NL22RABO039246814">
-                                                    <label for="">Bank BIC*</label>
-                                                    <input name="bank_bic" type="text" id="bank_bic" class="form-control mb-3" placeholder="RABONL2U">                                                    
+                                                    <div class="mb-3">
+                                                        <label for="bank_name">Bank*</label>
+                                                        <input name="bank_name" type="text" id="bank_name"
+                                                            class="form-control " placeholder="Rabobank">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="bank_account">Bank Account (IBAN)</label>
+                                                        <input name="bank_account" type="text" id="bank_account"
+                                                            class="form-control " placeholder="NL22RABO039246814">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="bank_bic">Bank BIC*</label>
+                                                        <input name="bank_bic" type="text" id="bank_bic"
+                                                            class="form-control " placeholder="RABONL2U">
+                                                    </div>
                                                 </div>
+                                                <hr>
                                                 <div class="mb-3" id="Email_settings_quotes">
                                                     <h5>Email settings(quotes)</h5>
-                                                    <label for="">Sender name</label>
-                                                    <input name="sender_name" type="text" class="form-control mb-3" placeholder=""> 
-                                                    <label for="">Email address sender</label>
-                                                    <input name="email_address_sender" type="text" id="email_address_sender" class="form-control mb-3" placeholder="">                                                                                                       
+                                                    <div class="mb-3"><label for="quotes_sender_name">Sender
+                                                            name</label>
+                                                        <input name="quotes_sender_name" id="quotes_sender_name"
+                                                            type="text" class="form-control " placeholder="">
+                                                    </div>
+                                                    <div class="mb-3"><label for="quotes_email_address_sender">Email address sender</label>
+                                                        <input name="quotes_email_address_sender" type="text"
+                                                            id="quotes_email_address_sender" class="form-control "
+                                                            placeholder="">
+                                                    </div>
                                                 </div>
+                                                <hr>
                                                 <div class="mb-3" id="Email_settings_purchase_order">
                                                     <h5>Email settings(purchase order)</h5>
-                                                    <label for="">Sender name</label>
-                                                    <input name="sender_name" type="text" id="sender_name" class="form-control mb-3" placeholder=""> 
-                                                    <label for="">Email address sender</label>
-                                                    <input name="email_address_sender" type="text" id="email_address_sender" class="form-control mb-3" placeholder="">                                                                                                       
+                                                    <div class="mb-3">
+                                                        <label for="purchase_sender_name">Sender name</label>
+                                                        <input name="purchase_sender_name" type="text"
+                                                            id="purchase_sender_name" class="form-control "
+                                                            placeholder="">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="purchase_email_address_sender">Email address
+                                                            sender</label>
+                                                        <input name="purchase_email_address_sender" type="text"
+                                                            id="purchase_email_address_sender" class="form-control "
+                                                            placeholder="">
+                                                    </div>
                                                 </div>
+                                                <hr>
                                                 <div class="mb-3" id="Email_settings_invoice">
                                                     <h5>Email settings(Invoice)</h5>
-                                                    <label for="">Sender name</label>
-                                                    <input name="invoice_sender_name" type="text" id="invoice_sender_name" class="form-control mb-3" placeholder=""> 
-                                                    <label for="">Email address sender</label>
-                                                    <input name="email_address_sender" type="text" class="form-control mb-3" placeholder="">                                                                                                       
+                                                    <div class="mb-3">
+                                                        <label for="invoice_sender_name">Sender name</label>
+                                                        <input name="invoice_sender_name" type="text"
+                                                            id="invoice_sender_name" class="form-control mb-3"
+                                                            placeholder="">
+                                                    </div>
+                                                    <div class="mb-3"> <label for="email_address_sender">Email address
+                                                            sender</label>
+                                                        <input name="email_address_sender" id="email_address_sender"
+                                                            type="text" class="form-control " placeholder="">
+                                                    </div>
                                                 </div>
-                                                <button  type="button" class="btn btn-primary">Modify</button>
+                                                <button type="button" class="btn btn-primary">Modify</button>
 
 
                                             </div>
@@ -492,10 +553,10 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <!-- Remove in production -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="/libs/select2/js/select2.min.js"></script>
     <script>
+        $("select[name=shipping_country]").select2();
         $("select[name=country]").select2();
-        $("select[name=category]").select2();
     </script>
 </body>
 
