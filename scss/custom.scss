@@ -146,3 +146,26 @@
   }
 }
 
+
+
+.tooltip {
+  font-size: .7rem;
+}
+
+.tooltip-inner {
+  background: #6a6a6a;
+}
+
+.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #6a6a6a;
+}
+
+.que_mark {
+  background: #686868;
+  width: 12px;
+  height: 12px;
+  color: white;
+  border-radius: 100%;
+  font-size: .9rem;
+  text-align: center;
+}
